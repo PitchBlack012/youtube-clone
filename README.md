@@ -18,6 +18,6 @@ The project is inspired by YouTube’s layout and was created to practice fronte
 
 ## 📷 Preview
 <p align="center">
-  <img src="screenshot/screenshot.png" alt="Project Screenshot" width="700">
+  <img src="screenshots/screenshot.png" alt="Project Screenshot" width="700">
 </p>
 
