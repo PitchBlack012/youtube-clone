@@ -1,0 +1,111 @@
+/* ===== VIDEO STYLES ===== */
+.thumbnail{
+    width: 100%;
+}
+.video-card{
+    padding: 4px 4px;
+}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.channel-pic{
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    height: 102px;
+    width: 48px;
+    cursor: pointer;
+}
+.thumbnail-row{
+    position: relative;
+}
+.profile-pic{
+    border-radius: 50px;
+    width: 36px;
+    margin-top: var(--spacing-sm);
+}
+.video-title{
+    margin-top: 0;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: var(--spacing-sm);
+}
+.author,.stats{
+    font-size: 12px;
+    color: var(--secondary-color);
+}
+.author{
+    margin-bottom: var(--spacing-xs);
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: Roboto, Arial;
+    column-gap: 8px;
+    row-gap: 22px;
+    padding:  20px 20px;
+}
+
+@media (max-width: 768px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media (min-width:770px) and (max-width:999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    font-family: roboto, arial;
+    font-size: 12px;
+    bottom: 11px;
+    right: 4px;
+    font-weight: 500;
+    padding: 4px 4px;
+    border-radius: var(--radius-sm);
+}
+.channel-pic .tooltip{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    padding: 10px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    bottom: -25px;
+    right: -178px;
+    align-items: center;
+    transition: 0.15s;
+    opacity: 0;
+    cursor: pointer;
+}
+.channel-pic:hover .tooltip{
+    opacity: 1;
+}
+.channel-pic .tooltip .tooltipname{
+    width: 150px;
+    margin-left: var(--spacing-xs2);
+}
+.channel-pic .tooltip .profile-pic{
+    height: 50px;
+    width: 50px;
+    margin-top: 0;
+}
+.channel-pic .tooltip .name{
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs2);
+}

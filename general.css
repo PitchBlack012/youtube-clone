@@ -1,0 +1,68 @@
+/* CSS Variables for consistent theming */
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #606060;
+    --background-color: #f8f8f8;
+    --border-color: #cccccc;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --text-color: #030303;
+    --hover-color: #f2f2f2;
+    
+    /* Additional colors */
+    --accent-color: #ff0000;
+    --success-color: #00ff00;
+    --warning-color: #ffaa00;
+    --error-color: #ff0000;
+    
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-xs2: 5px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    
+    /* Border radius */
+    --radius-sm: 2px;
+    --radius-md: 4px;
+    --radius-lg: 8px;
+    --radius-xl: 16px;
+    
+    /* Transitions */
+    --transition-fast: 0.15s;
+    --transition-normal: 0.3s;
+    --transition-slow: 0.5s;
+}
+
+p{
+    font-family: Roboto, Arial;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+body{
+    margin: 0;
+    margin-bottom: 100px;
+    padding-top: 57px;
+    padding-left: 72px;
+    background-color: var(--background-color);
+}
+
+/* Accessibility: Skip link for keyboard navigation */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000;
+    color: white;
+    padding: var(--spacing-sm);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    z-index: 1000;
+    transition: top var(--transition-normal);
+    font-family: Roboto, Arial;
+    font-size: 14px;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
